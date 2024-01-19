@@ -13,3 +13,7 @@ Will show their all-time neutral record.
 
 Will show records and postseason results(if applicable) from their last five seasons.
 
+Technical Info:
+This program will use the C# language and the ASP.Net framework. 
+The program will be designed in Visual Studio using the MVC design.
+College football data will be obtained using API calls to Collegefootballdata.com

@@ -1,9 +1,57 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "CFB Vault";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="index.css">-->
+    <title>College Football Vault</title>
+</head>
 
+<body>
+
+    <header>
+        <h1>College Football Vault</h1>
+    </header>
+
+    <main>
+
+        <section id="search">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Enter School Name Here" name="search" id="searchbar">
+                <button type="submit">Submit<i class="fa fa-search"></i></button>
+            </form>
+        </section>
+
+        <section id="teaminfo">
+            <h2>Memphis</h2>
+            <p>Mascot: Tigers</p>
+            <p>Conference: American</p>
+            <p>Abbreviation: MEM</p>
+
+            <section id="seasoninfo">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Enter Year " name="search" id="searchbar">
+                    <button type="submit">Submit<i class="fa fa-search"></i></button>
+                </form>
+
+                <h2>2023 Season</h2>
+                <p>Overall Record: 10-3</p>
+                <p>Conference Record: 6-2</p>
+                <p>Home Games: 4-2 </p>
+                <p>Road Games: 5-0</p>
+                <p>Neutral Games: 1-1</p>
+                <p>Preseason Rank</p>
+                <p>Postseason Rank</p>
+                <p>SP Overall Ranking</p>
+                <p>SP Offensive Ranking</p>
+                <p>SP Defensive Ranking</p>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</body>

@@ -19,7 +19,7 @@ namespace CollegeFootballVault.Models
 
 		public string getConference(string team, int year)
 		{
-
+			return "";
 		}
     }
 

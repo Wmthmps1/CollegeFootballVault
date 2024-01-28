@@ -15,12 +15,10 @@
     <PackageReference Include="MySql.Data" Version="8.3.0" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="Views\Teams\" />
+    <None Remove="Views\School\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\Teams\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="bin\Debug\net7.0\appsettings.json" />
+    <Folder Include="bin\Debug\net7.0\" />
+    <Folder Include="Views\School\" />
   </ItemGroup>
 </Project>

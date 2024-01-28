@@ -21,7 +21,7 @@ namespace CollegeFootballVault.Controllers
         
         public IActionResult Index()
         {
-            var schools = repo.GetTeamInfo();
+            var schools = repo.GetTeams();
             return View(schools);
         }
     }

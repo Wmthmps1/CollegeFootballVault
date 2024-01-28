@@ -11,5 +11,13 @@
   <ItemGroup>
     <PackageReference Include="CFBSharp" Version="4.5.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Dapper" Version="2.1.28" />
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Teams\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Teams\" />
   </ItemGroup>
 </Project>

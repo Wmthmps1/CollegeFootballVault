@@ -1,7 +1,23 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using System.Data;
+using CollegeFootballVault.Models;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using MySql.Data.MySqlClient;
 
-// Add services to the container.
+
+var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddTransient<ISchoolRepo, SchoolRepo>();
+
+builder.Services.AddScoped<IDbConnection>((s) =>
+{
+    IDbConnection conn = new MySqlConnection(builder.Configuration.GetConnectionString("cfbvault"));
+    conn.Open();
+    return conn;
+});
 
 var app = builder.Build();
 

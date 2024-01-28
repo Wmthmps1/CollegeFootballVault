@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Teams>
+
+
+
+@foreach (var team in @Model)
+{
+    <tr>
+        <td>@team.teamName</td>
+        <td>@team.mascotName</td>
+        <td>@team.conference</td>
+    </tr>
+}

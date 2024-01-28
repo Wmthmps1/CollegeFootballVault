@@ -3,7 +3,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CollegeFootballVault.Models
 {
-	public class Team_Record
+	public class TeamRecord
 	{
         public int year { get; set; }
 		public string team { get; set; }
@@ -16,11 +16,6 @@ namespace CollegeFootballVault.Models
         public int homeLosses { get; set; }
         public int awayWins { get; set; }
         public int awayLosses { get; set; }
-
-		public string getConference(string team, int year)
-		{
-			return "";
-		}
     }
 
 	}

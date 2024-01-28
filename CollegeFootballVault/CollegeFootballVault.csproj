@@ -20,4 +20,7 @@
   <ItemGroup>
     <Folder Include="Views\Teams\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bin\Debug\net7.0\appsettings.json" />
+  </ItemGroup>
 </Project>
